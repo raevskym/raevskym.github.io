@@ -26,6 +26,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/MRicon.png">
 
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
+
 </head>
 <body>
 
@@ -42,7 +54,7 @@
         <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland0.JPG">
+        <img class="lazy" data-original="images/iceland0.JPG">
         </div>
         <div class="two columns"><br></div>
         </div>
@@ -62,7 +74,7 @@
 
     <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/iceland1.JPG">
+      <img class="lazy" data-original="images/iceland1.JPG">
       </div>
     </div>
     <br>
@@ -72,7 +84,7 @@
 
     <div class="row">
       <div class="twelce columns">
-      <img class="u-max-full-width" src="images/iceland2.JPG">
+      <img class="lazy" data-original="images/iceland2.JPG">
       </div>
     </div>
     <br>
@@ -84,10 +96,10 @@
 
    <div class="row">
       <div class="six columns">
-      <img class="u-max-full-width" src="images/iceland3.JPG">
+      <img class="lazy" data-original="images/iceland3.JPG">
       </div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/iceland4.JPG">
+      <img class="lazy" data-original="images/iceland4.JPG">
       </div>
     </div>
         <br>
@@ -96,10 +108,10 @@
 
     <div class="row">
       <div class="six columns">
-      <img class="u-max-full-width" src="images/iceland5.JPG">
+      <img class="lazy" data-original="images/iceland5.JPG">
       </div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/iceland6.JPG">
+      <img class="lazy" data-original="images/iceland6.JPG">
       </div>
     </div>
 <br>
@@ -107,7 +119,7 @@
     <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/iceland7.JPG">
+      <img class="lazy" data-original="images/iceland7.JPG">
       </div>
       <div class="two columns"><br></div>
     </div>
@@ -118,7 +130,7 @@
     <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/iceland8.JPG">
+      <img class="lazy" data-original="images/iceland8.JPG">
       </div>
       <div class="three columns"><br></div>
     </div>
@@ -129,7 +141,7 @@
     <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/iceland9.JPG">
+      <img class="lazy" data-original="images/iceland9.JPG">
       </div>
       <div class="two columns"><br></div>
     </div>
@@ -138,7 +150,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland10.JPG">
+        <img class="lazy" data-original="images/iceland10.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -147,7 +159,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland11.JPG">
+        <img class="lazy" data-original="images/iceland11.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -159,7 +171,7 @@
     <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/iceland12.JPG">
+      <img class="lazy" data-original="images/iceland12.JPG">
       </div>
       <div class="two columns"><br></div>
     </div>
@@ -168,7 +180,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland13.JPG">
+        <img class="lazy" data-original="images/iceland13.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -177,7 +189,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland14.JPG">
+        <img class="lazy" data-original="images/iceland14.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -186,7 +198,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland15.JPG">
+        <img class="lazy" data-original="images/iceland15.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -198,7 +210,7 @@
       <div class="row">
         <div class="one column"><br></div>
         <div class="ten columns">
-        <img class="u-max-full-width" src="images/iceland17.JPG">
+        <img class="lazy" data-original="images/iceland17.JPG">
         </div>
         <div class="one column"><br></div>
       </div>
@@ -207,7 +219,7 @@
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/iceland18.JPG">
+        <img class="lazy" data-original="images/iceland18.JPG">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -215,7 +227,7 @@
      <br>
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/iceland16.JPG">
+        <img class="lazy" data-original="images/iceland16.JPG">
         </div>
       </div>
       <br>

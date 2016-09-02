@@ -26,6 +26,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/MRicon.png">
 
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
+
 </head>
 <body>
 

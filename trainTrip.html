@@ -26,6 +26,17 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/MRicon.png">
 
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
 
 </head>
 <body>
@@ -58,7 +69,7 @@
     <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/train1.jpg">
+      <img class="lazy" data-original="images/train1.jpg">
       </div>
       <div class="three columns"><br></div>
     </div>
@@ -81,7 +92,7 @@
     <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train2.jpg">
+      <img class="lazy" data-original="images/train2.jpg">
       </div>
       <div class="two columns"><br></div>
     </div>
@@ -93,7 +104,7 @@
     <div class="row">
       <div class="four columns"><br></div>
       <div class="four columns">
-      <img class="u-max-full-width" src="images/train3.jpg">
+      <img class="lazy" data-original="images/train3.jpg">
       </div>
       <div class="four columns"><br></div>
     </div>
@@ -116,7 +127,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train4.jpg">
+      <img class="lazy" data-original="images/train4.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -131,7 +142,7 @@
        <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train5.jpg">
+      <img class="lazy" data-original="images/train5.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -145,10 +156,10 @@
 
       <div class="row">
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train6.jpg">
+        <img class="lazy" data-original="images/train6.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train7.jpg">
+        <img class="lazy" data-original="images/train7.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -160,10 +171,10 @@
 
         <div class="row">
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train8.jpg">
+        <img class="lazy" data-original="images/train8.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train9.jpg">
+        <img class="lazy" data-original="images/train9.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -179,7 +190,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train10.jpg">
+      <img class="lazy" data-original="images/train10.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -191,10 +202,10 @@
 
       <div class="row">
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train11.jpg">
+        <img class="lazy" data-original="images/train11.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train12.jpg">
+        <img class="lazy" data-original="images/train12.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -210,7 +221,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train13.jpg">
+      <img class="lazy" data-original="images/train13.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -222,7 +233,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train14.jpg">
+      <img class="lazy" data-original="images/train14.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -234,7 +245,7 @@
       <div class="row">
       <div class="four columns"><br></div>
       <div class="four columns">
-      <img class="u-max-full-width" src="images/train15.jpg">
+      <img class="lazy" data-original="images/train15.jpg">
       </div>
       <div class="four columns"><br></div>
       </div>
@@ -246,7 +257,7 @@
       <div class="row">
       <div class="one column"><br></div>
       <div class="ten columns">
-      <img class="u-max-full-width" src="images/train16.jpg">
+      <img class="lazy" data-original="images/train16.jpg">
       </div>
       <div class="one column"><br></div>
       </div>
@@ -258,7 +269,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train17.jpg">
+      <img class="lazy" data-original="images/train17.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -272,7 +283,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train18.jpg">
+      <img class="lazy" data-original="images/train18.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -284,7 +295,7 @@
       <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/train19.jpg">
+      <img class="lazy" data-original="images/train19.jpg">
       </div>
       <div class="three columns"><br></div>
       </div>
@@ -296,7 +307,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train20.jpg">
+      <img class="lazy" data-original="images/train20.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -314,7 +325,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train21.jpg">
+      <img class="lazy" data-original="images/train21.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -327,7 +338,7 @@
       <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/train22.jpg">
+      <img class="lazy" data-original="images/train22.jpg">
       </div>
       <div class="three columns"><br></div>
       </div>
@@ -339,7 +350,7 @@
       <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/train33.jpg">
+      <img class="lazy" data-original="images/train33.jpg">
       </div>
       <div class="three columns"><br></div>
       </div>
@@ -351,7 +362,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train34.jpg">
+      <img class="lazy" data-original="images/train34.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -362,7 +373,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train35.jpg">
+        <img class="lazy" data-original="images/train35.jpg">
         </div>
       </div>
       <br>
@@ -373,7 +384,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train36.jpg">
+      <img class="lazy" data-original="images/train36.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -390,10 +401,10 @@
 
       <div class="row">
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train37.jpg">
+        <img class="lazy" data-original="images/train37.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train38.jpg">
+        <img class="lazy" data-original="images/train38.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -404,13 +415,13 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train39.jpg">
+        <img class="lazy" data-original="images/train39.jpg">
         </div>
       </div>
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train40.jpg">
+        <img class="lazy" data-original="images/train40.jpg">
         </div>
       </div>
       <br>
@@ -420,7 +431,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train41.jpg">
+        <img class="lazy" data-original="images/train41.jpg">
         </div>
       </div>  
       <br>
@@ -431,7 +442,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train42.jpg">
+        <img class="lazy" data-original="images/train42.jpg">
         </div>
       </div>
       <br>
@@ -445,10 +456,10 @@
 
        <div class="row">
         <div class="six columns" style="margin-top: 5%">
-        <img class="u-max-full-width" src="images/train43.jpg">
+        <img class="lazy" data-original="images/train43.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train44.jpg">
+        <img class="lazy" data-original="images/train44.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -458,7 +469,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train45.jpg">
+      <img class="lazy" data-original="images/train45.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -467,7 +478,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train46.jpg">
+        <img class="lazy" data-original="images/train46.jpg">
         </div>
       </div>
       <br>
@@ -475,10 +486,10 @@
 
       <div class="row">
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train47.jpg">
+        <img class="lazy" data-original="images/train47.jpg">
         </div>
         <div class="six columns">
-        <img class="u-max-full-width" src="images/train48.jpg">
+        <img class="lazy" data-original="images/train48.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -493,10 +504,10 @@
 
       <div class="row">
         <div class="four columns" style="margin-top: 4%">
-        <img class="u-max-full-width" src="images/train49.jpg">
+        <img class="lazy" data-original="images/train49.jpg">
         </div>
         <div class="eight columns">
-        <img class="u-max-full-width" src="images/train50.jpg">
+        <img class="lazy" data-original="images/train50.jpg">
         </div>
         <div class="two columns"><br></div>
       </div>
@@ -507,7 +518,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train52.jpg">
+        <img class="lazy" data-original="images/train52.jpg">
         </div>
       </div>
       <br>
@@ -517,7 +528,7 @@
 
       <div class="row">
         <div class="twelve columns">
-        <img class="u-max-full-width" src="images/train53.jpg">
+        <img class="lazy" data-original="images/train53.jpg">
         </div>
       </div>
       <br>
@@ -532,7 +543,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train54.jpg">
+      <img class="lazy" data-original="images/train54.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -544,7 +555,7 @@
       <div class="row">
       <div class="one column"><br></div>
       <div class="ten columns">
-      <img class="u-max-full-width" src="images/train55.jpg">
+      <img class="lazy" data-original="images/train55.jpg">
       </div>
       <div class="one column"><br></div>
       </div>
@@ -556,7 +567,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train56.jpg">
+      <img class="lazy" data-original="images/train56.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -569,7 +580,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train57.jpg">
+      <img class="lazy" data-original="images/train57.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -581,7 +592,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train58.jpg">
+      <img class="lazy" data-original="images/train58.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -593,7 +604,7 @@
       <div class="row">
       <div class="two columns"><br></div>
       <div class="eight columns">
-      <img class="u-max-full-width" src="images/train59.jpg">
+      <img class="lazy" data-original="images/train59.jpg">
       </div>
       <div class="two columns"><br></div>
       </div>
@@ -609,7 +620,7 @@
 
       <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/train60.jpg">
+      <img class="lazy" data-original="images/train60.jpg">
       </div>
       </div>
       <br>
@@ -626,7 +637,7 @@
 
       <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/train61.jpg">
+      <img class="lazy" data-original="images/train61.jpg">
       </div>
       </div>
       <br>
@@ -637,7 +648,7 @@
       <div class="row">
       <div class="three columns"><br></div>
       <div class="six columns">
-      <img class="u-max-full-width" src="images/train62.jpg">
+      <img class="lazy" data-original="images/train62.jpg">
       </div>
       <div class="three columns"><br></div>
       </div>
@@ -651,7 +662,7 @@
 
       <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/train63.jpg">
+      <img class="lazy" data-original="images/train63.jpg">
       </div>
       </div>
       <br>
@@ -662,7 +673,7 @@
 
       <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/train64.jpg">
+      <img class="lazy" data-original="images/train64.jpg">
       </div>
       </div>
       <br>
@@ -673,7 +684,7 @@
       <div class="row">
       <div class="one column"><br></div>
       <div class="ten columns">
-      <img class="u-max-full-width" src="images/train65.jpg">
+      <img class="lazy" data-original="images/train65.jpg">
       </div>
       <div class="one column"><br></div>
       </div>
@@ -687,7 +698,7 @@
 
       <div class="row">
       <div class="twelve columns">
-      <img class="u-max-full-width" src="images/train51.jpg">
+      <img class="lazy" data-original="images/train51.jpg">
       </div>
       </div>
       <br>
