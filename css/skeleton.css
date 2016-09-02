@@ -358,11 +358,12 @@ form {
 
 
 /* Utilities
+u-max-full-width is changed to lazy for the lazyload js plugin
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
-.u-max-full-width {
+.lazy {
   max-width: 100%;
   box-sizing: border-box; }
 .u-pull-right {
