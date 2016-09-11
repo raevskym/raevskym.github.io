@@ -38,21 +38,66 @@
   });
   </script>
 
+
 </head>
 <body>
+
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">✚</button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#Chicago">Chicago</a>
+    <a href="#Denver">Denver</a>
+    <a href="#SF">San Francisco</a>
+    <a href="#Portland">Portland</a>
+    <a href="#Seattle">Seattle</a>
+    <a href="#Vancouver">Vancouver</a>
+    <a href="index.html">Home</a>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</div>
+  </div>
+</div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="twelve column" style="margin-top: 10%">
-        <div text-align="center">  
+      <div class="twelve column" style="margin-top: 4%">
+        <div text-align="center">  <br><br>
         <h6>
         PSA: Amtrak's rail pass is $460 for 15 days of travel. <br>
-        This is the story of a guy who used and abused that offer, and is hoping to inspire some fellow crazy ones to do the same.</h6>
+        This is the story of a guy who used that ticket to go cross country, and is hoping to inspire some fellow crazy ones to do the same.</h6>
         </div>
         <h2> train tripping: an exchange of comfort for wisdom </h2>
-        <br>
+
+         <div class="row">
+            <div class="twelve columns">
+            <img class="lazy" data-original="images/usTrainMap.jpg">
+            </div>
+          </div>
+          <br>
         <h5>
         <a class="button" href="#Chicago">Chicago</a>
         <a class="button" href="#Denver">Denver</a>
@@ -60,6 +105,7 @@
         <a class="button" href="#Portland">Portland</a>
         <a class="button" href="#Seattle">Seattle</a>
         <a class="button" href="#Vancouver">Vancouver</a>
+        <a class="button button-primary" href="index.html">Home</a>
         </h5>
 
         <h6><u>August 1st: NYC to Upstate NY</u></h6>
@@ -75,19 +121,16 @@
     </div>
 
         <p><br>
-          Reasonable arguements against a cross country train trip may include claustrophobia, motion sickness, opportunity cost of time, loneliness, and monumental boredom. Indeed I was just an observer on a vessel travelling through space-time, completely powerless in my ability to accelerate or otherwise change my physical trajectory for the next 24 hours. 
+          Reasonable arguements against a cross country train trip may include claustrophobia, motion sickness, opportunity cost of time, loneliness, and monumental boredom. Indeed I was just an observer on a vessel travelling through space-time, completely powerless in my ability to accelerate or otherwise change my physical trajectory. 
 
-          <br><br>But it was precisely this set of conditions that triggered a deep meditation – viewing things, events, and people as “good” or “bad” was pointless because opinions and actions held absolutely no impact on my trajectory. Rather my mind was wildly intrigued by what <i>is</i>. This feeling persisted the whole way from New York to Vancouver.</p>
+          <br><br>But it was precisely these conditions that triggered deep meditation – viewing things, events, and people as “good” or “bad” was pointless because such opinions held absolutely no impact. Instead I was simply and wildly intrigued by what <i>is</i>. Cultures, cities, and landscapes gradually morphed from one to another. Eccentric people who I would have never otherwise met stumbled into my life and altered it forever.</p>
 
 <div class="Chicago" id="Chicago"></div>
+<br><br>
         <h6><u>August 2nd: Great Lakes to Chicago</u></h6>
-
-        <p>
-        A vibrant sunrise near Lake Erie instantly re-instilled the previous day’s meditation despite sleeping only half the hours from the night before. There is simply nothing comparable to the above described feeling of observing the world pass bye you, gradually morphing from one climate, culture, and city to another. I didn't just see the Midwest approaching – I <i>felt</i> the Midwest approaching. 
         </p>
         <p>
-        Arriving at downtown Chicago around midday, I immediately felt a mix of Amsterdam and New York vibes. Huge, modern, sky-scrapping and compact financial district interweaved by rivers. Instincts directed me towards renting a Divvy bike on which I quickly escaped what was cleverly named “the loop”. Despite excessive Pokémon Go traffic, it was great to see a beach walking distance from town not packed like sardines (cough, Coney Island.)
-        </p>
+        Arriving in downtown Chicago around midday, I felt a mix of Amsterdam and New York vibes: a huge, modern, sky-scrapping financial district and canals interweaved by bike lanes. Instinct directed me towards renting a Divvy bike on which I quickly escaped what was cleverly named “the loop”. Despite excessive Pokémon Go traffic, it was great to see a beach walking distance from town not packed like sardines (i.e. Coney Island...)
 
     <div class="row">
       <div class="two columns"><br></div>
@@ -97,31 +140,20 @@
       <div class="two columns"><br></div>
     </div>
 
-        <p><br>
-        The coastline ride culminated in a zoo, the first I’ve been to in the last ten years. It was free to public and thus slightly less guilt consuming than usual. It was quite a slap in the face to not only be younger than all the 5 year old day camp kids, but even their counselors… 
-        </p>
-
-    <div class="row">
-      <div class="four columns"><br></div>
-      <div class="four columns">
-      <img class="lazy" data-original="images/train3.jpg">
-      </div>
-      <div class="four columns"><br></div>
-    </div>
-
       <p><br>
-        On top of exploring a city I’ve never been to, two other wildcards awaited me. Dinner with a friend of a friend of a friend and staying overnight with a guy I’ve met only once. In the first episode, Anastasia–a wise, relatable, gorgeous and generous Russian American girl–and I successfully identified a remarkably large amount absurdities we witnessed, probably inherent to private schools on the east coast. Funny how many people in the New York Citysphere are so conditioned to always be making money, spending money, or not knowing what to do with themselves (facebooking or drinking.) A great conversation loaded with truth bombs overall. 
+        On top of exploring a city I’ve never been to, two other wildcards awaited me. Dinner with a friend of a friend of a friend and staying overnight with a guy I’ve met only once. 
       </p>
       <p>
-        Upon arrival at Kief’s similar ideas resurfaced; the attitudes of those who avoided the east coast sandbag kept resurfacing throughout my journey, and with less nuances the further from NY I went. To current TEPs – the older generations provide fascinating insights on the world’s mysteries, whether they are about the holes and bones of foam or about the careers and struggles of reality. It is a quite humbling, invigorating, and comforting feeling to be part of an entity so much greater than myself. 
-      <p>
-        Anastasia and Keith, thanks so much for making feel Chicago feel like home. Eager to see you again, always happy to host you regardless of where I dock myself. 
+        In the first episode, Anastasia and I successfully identified a remarkably large amount absurdities we witnessed, probably inherent to private universities on the east coast. Funny so how many people in the US are so conditioned to always be making money, spending money, or not knowing what to do with themselves. 
       </p>
+      <p>
+        Upon arrival at Kief’s similar ideas resurfaced; there is evidently much perspective to be gained from living in as many regions of the country as possible. To current TEPs – the older generations provide fascinating insights on the world’s mysteries, whether they are about the holes and bones of foam or about careers and the wonders of real life. I strongly recommend outreach, as it is humbling and invigorating to stand on the shoulders of giants.
+      <p>
 
 
       <h6><u>August 3rd: Chicago to somewhere in Nebraska</u></h6>
       <p>
-        On the way to my next destination, Denver, very friendly passengers around me introduced themselves. I quickly befriended Jack – a hippie from Wyoming, Sarah – an incoming masters in poetry student at UW, and Travis – a liberated ex-barista travelling on a one way ticket to Denver with no disposable income and no acquaintances in Colorado.  Their backstories combined with the Nebraska sunset most certainly reaffirmed that I am on what is above all a spiritual journey.
+        On the way to Denver I quickly befriended Jack – a current resident of the Shambhala Mountain Center, Sarah – an incoming masters in poetry student at UW, and Travis – an ex-barista travelling on a one way ticket to Denver with no disposable income and no acquaintances in Colorado.  Hearing their backstories over the Nebraska sunset reaffirmed that I am indeed on a spiritual journey.
       </p>
 
       <div class="row">
@@ -133,10 +165,11 @@
       </div>
       <br>
       <p>
-        Jack and I had no rush to get to our next destinations, so we decided to go explore Denver with Travis the next day. It’s truly remarkable how open the passengers of a train are – I felt more comfortable starting conversations in the cart with people I knew absolutely nothing about than with Penn kids walking down Locust.
+        Jack and I had no rush to get to our next destinations, so we decided to go explore Denver with Travis the next day. Planes and cars draw people focused on getting from point A to point B. Trains however draw a specific personality type – one that is eager to embark on a journey of unknowns, willing to spend time meditating on the nature of reality, eager to share food, living space, and ideas with strangers. The generosity and patience of these people rubs off, even on fast-paced urban rats like myself. 
       </p>
 
-<div class="Denver" id="Denver"></div>
+<div class="Denver" id="Denver"></div><br><br>
+
       <h6><u>August 4th: The Trio’s Adventures in Denver & Boulder</u></h6>
 
        <div class="row">
@@ -148,7 +181,7 @@
       </div>
       <br>
       <p>
-        Jack (left), Travis (right) and I decided our first move was to visit a supposedly famous Tajiki Tea house in Boulder. On the bus up to Boulder Jack showed a highly enlightening short clip that contributed to his spiritual liberation by convincing him to drop out of the fast-paced capitalist rat race. Among the teahouse’s 5-page menu of only teas, I ordered my favorite Japanese Sencha – one of the holiest herbs on this planet. If you haven’t heard it from me already, tea (especially green tea) has a chemical called l-thiamine that doesn’t exist in coffee and suppressed the anxiety-inducing effects of caffeine. You can never drink too much green tea. 
+        Jack (left), Travis (right) and I decided our first move was to visit a supposedly famous <a href="http://www.boulderteahouse.com/">Tajiki Tea House</a> in Boulder. On the bus up to Boulder Jack showed a highly enlightening <a href="https://www.youtube.com/watch?v=A-rEb0KuopI">short clip</a> that contributed to his spiritual liberation by convincing him to embrace buddhism and drop out of the rat race. Among the teahouse’s 5-page menu of only teas, I ordered my favorite Japanese Sencha – one of the holiest herbs on this planet. If you haven’t heard it from me already, tea (especially green tea) has a chemical called <a href="https://en.wikipedia.org/wiki/Theanine">l-theanine</a> that doesn’t exist in coffee and suppressed the anxiety-inducing effects of caffeine. You can never drink too much green tea. 
       </p>
       <p>
         Travis asked the waiters about camping spot recommendations and found a road that went straight into the mountains from Boulder. We all went on a short hike, and were stunned to find that only 20 minutes from downtown you could escape any trace of civilization.  After minor mountaineering Jack and I had to make our way back to Denver, saying our goodbye’s to Travis and wishing him the best for his wildly new lifestyle. (Travis, if you see this, please reach out – would be great to hear how you’re doing!)
@@ -166,7 +199,7 @@
 
    <h6><u>August 5th: Denver to Utah</u></h6>
    <p>
-    The gnarliest segment of the journey, a 35-hour segment from Denver to San Francisco was also coincidentally the most therapeutic. I’ve seen the Rockies in December and January, covered in pow ready to shred, and am happy to report that they are just as stunning in the middle of August. 
+    The gnarliest part of the journey, a 35-hour segment from Denver to San Francisco was also coincidentally the most therapeutic. I’ve seen the Rockies in December and January, covered in pow ready to shred, and am happy to report that they are just as stunning in the middle of August. 
     </p>
 
         <div class="row">
@@ -179,42 +212,38 @@
         <div class="two columns"><br></div>
       </div>
       <p>
-        On the left is Moon River, a beautiful stretch of camp-able beach. Only the once-a-day California Zephyr train I was on ever disturbs the campers – and every single one of them retaliates by mooning the train as it passes by. On the right is the valley that contains Winter Park, a holy location I was lucky enough to visit with 35 other degenerates this past year. Shout out to my Penn Ski Team fellas. (If you think my man Albert is a savage in the park, you better check out what these mountain bikers have the balls to do in the summer…)
+        On the left is Moon River, a beautiful stretch of camp-able beach. Only the once-a-day California Zephyr train I was on ever disturbs the campers – and every single one of them retaliates by mooning the train as it passes by. On the right is the valley that contains Winter Park, a holy location I was lucky enough to visit with 35 other degenerates this past year. Shout out to my Penn Ski fellas. (If you think my man Albert is a savage in the park, you better check out what these mountain bikers have the balls to do in the summer…)
       </p>
-      <p>This trip had it’s own special dose of people. Besides a dude who got so drunk on the train we had to pause to help him with his Asthma attack, I met yet another ridiculous guy called Sam. Depicted in the bottom right, reading a magazine, Sam was telling me about how he never stays in hotels because hostels are 3x cheaper and you make 3x as many friends. Hostels made my journey possible and better, and I strongly recommend to everyone reading. Either way, Sam told me about how he recently couldn’t find a hostel, and elected to stay with homeless people instead of at a hotel. But he had the money to buy 4 people he just befriended on the train a beer each. One selfless hell of a fellow. 
+      <p>This trip had it’s own special dose of people. Depicted in the bottom right, reading a magazine, Sam was telling me about how he never stays in hotels because hostels are 3x cheaper and you make 3x as many friends. Hostels made my journey possible and better, and I strongly recommend to everyone reading. Either way, Sam told me about how he recently couldn’t find a hostel, and elected to stay with homeless people instead of at a hotel. But he had the money to buy 4 people he just befriended on the train a beer each. One selfless hell of a guy. 
         </p>
-        <p>
-          When I went down to the food cart for a coffee I overheard a 60 year old dude from the Midwest complaining about the deteriorating of the Midwestern economy. After a combination of skepticism and curiosity I chose to engage this vibrantly anxious grandpa-in-a-stoner-hoodie and hear out more of his perspective. Turns out he had quite a powerful and factual tale about the utter deterioration of the region because of commercial agro-business and unethical farming practices. He was so visibly shattered by it that his arms were trembling and his fingers were twitching. Last I saw him he buying a whole store’s supplies worth of Natural Spirits. 
-        </p>
-
+        
       <div class="row">
-      <div class="two columns"><br></div>
-      <div class="eight columns">
+      <div class="three columns"><br></div>
+      <div class="six columns">
       <img class="lazy" data-original="images/train10.jpg">
       </div>
-      <div class="two columns"><br></div>
+      <div class="three columns"><br></div>
       </div>
+      <br><p>
+          When I went down to the food cart I overheard a 60 year old dude from the Midwest complaining about the fall of the Midwestern economy. Skepticism and curiosity convinced me to engage this vibrantly anxious grandpa-in-a-stoner-hoodie. Turns out he had quite a powerful and factual tale about the utter deterioration of the region because of commercial agro-business behemoths and unethical farming practices. He was so visibly shattered by it that his arms were trembling and his fingers were twitching. 
+        </p>
+
+
       <br>
       <h6><u>August 6th: Somewhere in Nevada to The Bay</u></h6>
       <p>
-        6am sunlight over the Nevada desert sent me from sleep to meditation, with no conscious effort exerted from my end. After a multi-hour momentary lapse of reason, I brewed myself a tea in my portable electric kettle and made moves to the observers cart. Almost immediately after sitting down, yet another pair of crazy individuals stumbled into my life – a ~30 year old couple who had spent the last 60 days biking from their home in Vancouver all the way to Denver, making overnight stops in the Yellowstone wilderness and surviving on a $15/day food budget. Their vibrant energies really hammered home the money =/= happiness philosophy. I don’t know anyone in the 1st percentile income bracket who even has half that many days per year to go explore the nature of the universe.  Unforgettable. And they had plans to bike back home from San Francisco up the coast.
+        6am sunlight over the Nevada desert sent me from sleep to meditation. After a multi-hour momentary lapse of reason, I brewed myself a tea and made moves to the observers cart. Almost immediately after sitting down, yet another pair of crazy individuals stumbled into my life: a ~30 year old couple who had spent the last 60 days biking from their home in Vancouver all the way to Denver, camping overnight and surviving on a $15/day food budget. An unforgettable reminder about time being more valuable than money: one resource is recoverable, the other isn't. And they had plans to bike back home from San Francisco up the coast.
       </p>
 
-      <div class="row">
-        <div class="six columns">
-        <img class="lazy" data-original="images/train11.jpg">
-        </div>
-        <div class="six columns">
-        <img class="lazy" data-original="images/train12.jpg">
-        </div>
-        <div class="two columns"><br></div>
-      </div>
 
+<div class="SF" id="SF"></div><br><br>
 
-<div class="SF" id="SF"></div>
       <h6><u>August 7th : the east part of the bay to San Francisco</u></h6>
       <p>
-        I had the luck of seeing Chevron’s ginormous territory across the bay from San Francisco, because I stayed the previous night at my Dad’s best friend Nico’s house, who is a Chemical Engineering PhD working at Chevron. He took me kayaking and showed me some awesome sea otters, completely blissful of the vast oil contraptions built right where the water turns into beach. They had some nice tennis courts though.
+         Before entering downtown SF, I stayed at my Dad’s best friend Nico’s house, who is a Chemical Engineering PhD working at Chevron. He took me kayaking and showed me some awesome sea otters in utter bliss of the vast oil contraptions built a couple hundred feet away. 
+      </p>
+      <p>
+        It's always a fascinating time trip to reuinite with people from your distant pass. The disparity between your current and previous impression of someone is not only indicative of them, but also of disparities between your current and previous self.
       </p>
 
 
@@ -226,18 +255,7 @@
       <div class="two columns"><br></div>
       </div>
       <br>
-      <p>
-        Definitely got to see the area from an awesome angle, although I hope to see the Bay’s energy system in a more progressive state when I return, given all the sustainability culture on that half the country. At least I got some good perspective on my Dad’s demeanor back in the day.
-      </p>
-
-      <div class="row">
-      <div class="two columns"><br></div>
-      <div class="eight columns">
-      <img class="lazy" data-original="images/train14.jpg">
-      </div>
-      <div class="two columns"><br></div>
-      </div>
-      <br>
+     
       <p>
         In the afternoon Nico dropped me off at the BART station which took me into downtown. The first peep out of the subway’s tunnel hit me like stepping foot in a foreign country. There is something so damn unforgettable about the demeanor in which SF presents itself, although I couldn’t pin it on any one thing. I was breathing Ocean, not waste. I was surrounded by palm trees and a pervasive scent of coffee. I was shattered by the fact that there was actually a place more expensive than New York.
       </p>
@@ -251,7 +269,7 @@
       </div>
       <br>
       <p>
-        In the afternoon Nico dropped me off at the BART station which took me into downtown. The first peep out of the subway’s tunnel hit me like stepping foot in a foreign country. There is something so damn unforgettable about the demeanor in which SF presents itself, although I couldn’t pin it on any one thing. I was breathing Ocean, not waste. I was surrounded by palm trees and a pervasive scent of coffee. I was shattered by the fact that there was actually a place more expensive than New York.
+        In the afternoon Nico dropped me off at the BART station which took me downtown. The first peep out of the subway’s tunnel hit me like stepping foot in a foreign country. There is something so damn unforgettable about the SF's instant demeanor, although I couldn’t pin it on any one thing. I was breathing Ocean, not waste. I was surrounded by palm trees and a pervasive scent of coffee. I was shattered by the fact that there was actually a place more busy and expensive than New York. The first place my buddy Drew showed me upon arrival was a quite unforgettable vantage point over the city, Mission Dolores Park:
       </p>
 
       <div class="row">
@@ -263,7 +281,7 @@
       </div>
       <br>
       <p>
-        As night approached we made moves to Rosenbluth’s 13-person house of programmers. It’s quite inspiring to see not only the willingness, but the eagerness to be in a constant state of learning, failure, and evolvement among the young techies of the valley. Definitely an honorable way to spend a lifetime. The air was so liberatingly clean compared to New York that I opted to sleep out in Rosenbluth’s backyard. No regrets. Here’s the not so shabby view out his back porch.
+        As night I moved to Rosenbluth’s 13-person house of programmers. It’s quite inspiring to see not only the willingness, but the eagerness to be in a constant state of learning, failure, and evolvement among the young techies of the valley. Definitely an honorable way to spend a lifetime. The air was so liberatingly clean compared to New York that I opted to sleep out in Rosenbluth’s backyard. No regrets. Here’s the not so shabby view out his back porch.
       </p>
 
       <div class="row">
@@ -274,9 +292,9 @@
       <div class="two columns"><br></div>
       </div>
       <br>
-      <h6><u>August 8th: Exploring the infamous Palo Alto / Menlo Park area</u></h6>
+      <h6><u>August 8th: Palo Alto / Menlo Park</u></h6>
       <p>
-        After an unfortunately expensive but equally amazing coffee, I hopped on a train that took me south to Menlo Park. My instincts drove me to go explore Stanford before getting to the tech behemoths. I ended up spending all day there – it had the campus of a beautiful and secluded liberal arts college with the heart of a reality-shattering engineeering school. 
+        After an unfortunately expensive but appropriately amazing coffee, I hopped on a train that took me south to Menlo Park. My instincts drove me to go explore Stanford before getting to the tech behemoths. I ended up spending all day there – it had the campus of a beautiful and secluded liberal arts college with the heart of a world-warping engineeering school. 
       </p>
 
 
@@ -289,7 +307,7 @@
       </div>
       <br>
       <p>
-        After my man Farned got out of work (at 7-f’ing-30) he picked up and drove me straight into the hills west of Palo Alto through the famous Sand Hill.
+        After Farned got out of work (at 7:30...) he picked up and drove me straight into the hills west of Palo Alto through the famous Sand Hill.
       </p>
 
       <div class="row">
@@ -303,6 +321,9 @@
       <p>
         In surprisingly little time we went from the heart of Silicon Valley to the absolute middle of nowhere. Joe promised a panoramic picture of the bay and my life’s first glimpse of the Pacific – but all I saw was clouds. Can’t complain but I will return.
       </p>
+      <p>
+        Thanks for the tour, teaching me what a Horchata is, building up my risk tolerance, and getting me crazy excited about the whole process of creating something out of nothing. 
+      </p>
 
       <div class="row">
       <div class="two columns"><br></div>
@@ -312,12 +333,9 @@
       <div class="two columns"><br></div>
       </div>
       <br>
-      <p>
-        Man, my life would have been different if it wasn’t for this kid. Thanks for the tour, teaching me what a Horchata is, building up my risk tolerance, and getting me crazy excited about the whole process of creating something out of nothing. 
-      </p>
 
 
-      <h6><u>August 9th: Biking like a madman to see San Francisco</u></h6>
+      <h6><u>August 9th: Biking like a madman through San Francisco</u></h6>
       <p>
         For some reason, San Francisco was the only city on my route that doesn’t have a 24-hour pass bike sharing system. What’s up with that? Anyways, I rented a bike in the Mission and went straight to Haight, the cities hipster heaven. Coffee shops, smoke shops, alternative medicines, and alternative bookstores popped up on every block. First time passing through a slice of the world anything close to this.
       </p>
@@ -331,7 +349,7 @@
       </div>
       <br>
       <p>
-        Immediately after came Golden Gate park, a zone that dismisses any recollection that you are in a city.
+        Immediately after came Golden Gate park, a zone that dismisses any notion of city.
       </p>
 
 
@@ -390,7 +408,7 @@
       </div>
       <br>
       <p>
-        After a severe underestimate of the cities size, my bike rental was ending so I dropped it off back at the mission and took BART west into Berkeley. I had the honor of getting picked up by Skylar in the most hippie vehicle I’ve ever had the honor to ride in. Immediately after, I had an even bigger honor to stay in his Dad’s office overnight – a room covered in plans to build the next generation of sustainable technologies. I stayed up for a while mentally downloading and processing all of this invaluable information. This guy transferred from Columbia to Berkeley. What a power move. 
+        After a severe underestimate of the cities size, my bike rental was ending so I dropped it off back at The Mission and took BART west into Berkeley. Skylar picked me up in the most hippie vehicle I’ve ever had the honor to ride in. Immediately after, I had an even bigger honor to stay in his Dad’s office overnight – a room covered in plans to build the next generation of sustainable technologies. I stayed up for a while mentally downloading and processing all of this invaluable information. This guy transferred from Columbia to Berkeley. What a power move. 
       </p>
 
 
@@ -426,8 +444,10 @@
       </div>
       <br>
       <p>
-        The previous day, I had just missed the Berkeley sunset, so this time around I made moves back to Skyler’s a couple hours earlier. He took me so far into the hills that we surpassed the clouds, and even the mighty Berkeley National Labs. One thing that impressed me about the whole bay area was how quickly you can get from an urban center to the middle of nowhere, from a beach to a mountaintop, or from artists to technologists. It’s one diverse hell of a place. 
+        The previous day, I had just missed the Berkeley sunset, so this time around I made moves back to Skyler’s a couple hours earlier. He took me so far into the hills that we surpassed the clouds, and even the mighty Berkeley National Labs.
       </p>
+      <p>
+        In the whole bay area you can so quickly you can get from an urban center to the middle of nowhere, from a beach to a mountaintop, or from artists to technologists. It’s one diverse hell of a place. 
 
       <div class="row">
         <div class="twelve columns">
@@ -437,8 +457,7 @@
       <br>
       <h6><u>August 11th: Berkeley to NorNorCal</u></h6>
       <p>
-        The final day in the bay was spent in thorough investigation of Berkeley. Roaming around the campus and the town reminded me substantially of when I visited Ann Arbor my senior year. It was enlightening to learn that you only have to live in California for a year if you want your Berkeley tuition sliced in half.  Fatigue got the best of me and I passed out right after boarding train to Portland.
-      </p>
+        The final day in the bay was spent in thorough investigation of Berkeley. Roaming around the campus and the town reminded me of Ann Arbor. It was enlightening to learn that you only have to live in California for a year if you want your Berkeley tuition sliced in half. </p>
 
       <div class="row">
         <div class="twelve columns">
@@ -448,33 +467,10 @@
       <br>
 
 
-<div class="Portland" id="Portland"></div>
-      <h6><u>August 12th: Oregon’s farmlands to Portland</u></h6>
-      <p>
-        Immediately upon waking up, stunning landscapes ensued. Through this journey I realized that no other mode of transport induces such a zen clarity, except ferries. In a car you are concerned with safety, efficiency, speed, trajectory. In a plane you are concerned with getting from point A to point B ASAP, with no immersion into the milky view of the sky seen through a tiny paper-sized window. In buses you are frustrated by traffic (with little idea of your ETA), encapsulated in a small walking-discouraged bubble, and at the mercy of the sanity, size, and sweat of whoever sits next to you.
-      </p>
+<div class="Portland" id="Portland"></div><br><br>
 
-       <div class="row">
-        <div class="six columns" style="margin-top: 5%">
-        <img class="lazy" data-original="images/train43.jpg">
-        </div>
-        <div class="six columns">
-        <img class="lazy" data-original="images/train44.jpg">
-        </div>
-        <div class="two columns"><br></div>
-      </div>
-      <br>
-      <p> Upon arrival in Portland I was greeted by a giant booming Mt. Hood in the background. </p>
+      <h6><u>August 12th: Portland</u></h6>
 
-      <div class="row">
-      <div class="two columns"><br></div>
-      <div class="eight columns">
-      <img class="lazy" data-original="images/train45.jpg">
-      </div>
-      <div class="two columns"><br></div>
-      </div>
-      <br>
-      <p> The artistic spirit of this city manifested itself in music, books, street art, and museums.  </p>
 
       <div class="row">
         <div class="twelve columns">
@@ -482,16 +478,16 @@
         </div>
       </div>
       <br>
-      <p> The nature – city contrast was unlike anything I’ve seen before. People were swimming around drinking beers, right across the street from downtown skyscrapers. Imagine going for a dunk in the Hudson. Really goes to show the environmental consciousness of every individual involved. What was also stunning is how open strangers are to conversing. I got many questions about the bike I rented and the clothes I was wearing. Unlike Locust Walk or downtown NY, almost nobody was walking the streets with their headphones in – almost eager to stumble into some conversation. </p>
+      <p> The nature – city contrast was unlike anything I’ve seen before. People were swimming and drinking beers right across from downtown skyscrapers. (Imagine going for a dunk in the Hudson.) Really goes to show the environmental consciousness of every individual involved. What was also stunning is how open strangers are to conversing. I got many questions about the bike I rented and the clothes I was wearing. Unlike Locust Walk or downtown NY, almost nobody was walking the streets with their headphones in – almost eager to stumble into some conversation. </p>
 
       <div class="row">
-        <div class="six columns">
-        <img class="lazy" data-original="images/train47.jpg">
-        </div>
-        <div class="six columns">
+        <div class="two columns"><br></div>
+        <div class="eight columns">
         <img class="lazy" data-original="images/train48.jpg">
         </div>
-        <div class="two columns"><br></div>
+        <div class="two columns">
+          <br>
+        </div>
       </div>
 
       <h6><u>August 13th: Exploring Portland</u></h6>
@@ -499,7 +495,7 @@
         Upon waking up real late, I befriended Bart who was staying in the same hostel as I. He turned out to be from Antwerp, a Belgian town within an hour of where I’ll be studying abroad next semester. Bart looked like a stereotypical 30-year old philosopher, with more beard than head hair and had just come back from spending the previous 5 weeks venturing through Alaska. I got some great pointers on how to afford spending that long in Alaska, a voyage I hope to embark on ASAP. 
       </p>
       <p>
-        After breakfast, my immediate move was to explore the mountains that surrounded Portland. I hopped on a subway that took me West, and 5 minutes later I got off, deeper into the earth’s crust than I’ve ever been. In order to get out of the subway, onto the surface I had to take a 750ft elevator going vertically up.  The doors opened and I was opened by 360 degrees of wilderness. 
+        After breakfast, my immediate move was to explore the mountains that surrounded Portland. I hopped on a subway that took me West, and 5 minutes later I got off, deeper into the earth’s crust than I’ve ever been. In order to get out of the subway, I had to take a 750ft elevator going vertically up.  The doors opened and I was surrounded by 360 degrees of wilderness. 
       </p>
 
       <div class="row">
@@ -513,7 +509,7 @@
       </div>
 
       <p>
-        I chose to walk north at a constant elevation line, but otherwise had no plans for direction. The path I followed eventually intersected a seemingly abandoned that I felt inspired to follow. It took many twists and turns, and featured a complete lack of any other people or even traces of people. It spat me out at an enormous rose garden with a stunning background view of Portland and Mt. Hood.
+        I took a path that had many twists and turns, and featured a complete lack of any other people. It spat me out at an enormous rose garden with a stunning background view of Portland and Mt. Hood.
       </p>
 
       <div class="row">
@@ -523,7 +519,7 @@
       </div>
       <br>
       <p>
-        Right down the road there were also the Portland Japanese Gardens. It was probably the most apt place in the US to have an establishment like this, but it still felt unsatisfactorily out of place. Hopefully I’ll be able to get a glimpse of some real Japanese Zen Buddhist temples in the future.
+        Right down the road there were also the Portland Japanese Gardens. It was probably the most apt place in the US to have an establishment like this, but it still felt unsatisfactorily out of place. 
       </p>
 
       <div class="row">
@@ -537,15 +533,13 @@
       </p>
 
 
-<div class="Seattle" id="Seattle"></div>
+<div class="Seattle" id="Seattle"></div><br><br>
+
       <h6><u>August 14th: Portland to Seattle</u></h6>
 
       <div class="row">
-      <div class="two columns"><br></div>
-      <div class="eight columns">
+      <div class="twelve columns">
       <img class="lazy" data-original="images/train54.jpg">
-      </div>
-      <div class="two columns"><br></div>
       </div>
       <br>
       <p>
@@ -561,7 +555,7 @@
       </div>
       <br>
       <p>
-        My first impression of Seattle was somewhat negative because of the industrialized zone near the train station. Fortunately, as soon as I hopped on a bus up to Reife’s house Seattle appeared the way it truly is – the natural appreciation, liberal culture, and bike-friendliness of Portland and with the technological and urban drive of San Francisco. A block from my destination bus stop, Ava sprinted at me like a bullet. She’s Reife’s black lab who was part of the legendary summer 2015 foam squad. Great hospitality from Reife himself, but he was a lot more mild than Ava.
+        My first impression of Seattle was somewhat negative because of the industrialized zone near the train station. Fortunately, as soon as I hopped on a bus up to Reife’s house Seattle appeared the way it truly is – the natural appreciation, liberal culture, and bike-friendliness of Portland and the technological and urban drive of San Francisco. A block from my destination bus stop, Ava sprinted at me like a bullet. She’s Reife’s black lab who was part of the legendary summer 2015 foam squad. Great hospitality from Reife himself, but he was a lot more mild than Ava.
       </p>
 
       <div class="row">
@@ -598,7 +592,7 @@
       </div>
       <br>
       <p>
-        I came in with no expectations, and saw a tiny couple-block town with more boats than cars. There was one bookstore though that was heavily loaded up on eastern literature, which I appreciated. Grabbed a super old copy Alan Watts’s book for my voyages through Europe. It definitely left me eager to visit the real Scandinavia.
+        I came in with no expectations, and saw a tiny couple-block town with more boats than cars. There was one bookstore though that was heavily loaded up on eastern literature, which I appreciated. Grabbed a super old copy of Alan Watts’s book for my voyages through Europe. It definitely left me eager to visit the real Scandinavia.
       </p>
 
       <div class="row">
@@ -610,12 +604,12 @@
       </div>
       <br>
       <p>
-        After making moves back to Seattle, I decided to bike all the way to the east edge of the city to meet up with Reife and Ava at a dog park. I’m becoming more and more convinced that dogs generated unparalleled happiness and energy. Eventually we made moves back to Reife’s and met up with Kotter. It’s quite fascinating to observe how the personality types and intellectual interests of dark side stay relatively consistent throughout many generations.  
+        After making moves back to Seattle, I decided to bike all the way to the east edge of the city to meet up with Reife and Ava at a dog park. I’m becoming more and more convinced that dogs generated unparalleled happiness and energy. Eventually we made moves back to Reife’s and met up with Kotter. It’s quite fascinating to observe how the utter curiosity, risk tolerance, and intellectual interests of dark side stay relatively consistent throughout many generations.  
       </p>
 
       <h6><u>August 16th: Seattle to Vancouver</u></h6>
       <p>
-        My train ticket had expired by this point, but I felt obligated to check out Vancouver given how damn close I was. Luckily I found a $30 greyhound ticket that brought me there and back, and another nature-loving Couchsurfer willing to host me.  I witnessed an unbeatable sunset at the port before I made my moves to Vancouver.
+        My train ticket had expired by this point, but I felt obligated to check out Vancouver given how close I was. Luckily I found a $30 greyhound ticket that brought me there and back, and another nature-loving Couchsurfer willing to host me.  I witnessed an unbeatable sunset at the port before I made my moves to Vancouver.
       </p>
 
       <div class="row">
@@ -629,7 +623,8 @@
       </p>
 
 
-<div class="Vancouver" id="Vancouver"></div>
+<div class="Vancouver" id="Vancouver"></div><br><br>
+
       <h6><u>August 17th: Vancouver & Victoria</u></h6>
       <p>
         It must have been before 4:30am when Jeff woke me up to go fishing – but I have absolutely no regrets. A 25-minute car ride from downtown, on the other side of the river, a magical view of the city appeared. I must have spent three hours watching this sunrise, with not the slightest desire to move anywhere. 
@@ -642,7 +637,7 @@
       </div>
       <br>
       <p>
-        After fishing, Jeff dropped me off downtown and I obviously rented a bike to go explore Stanley Park – a park so big that it’s area is roughly equal in size to the rest of the downtown area combined. You can see it in front of and slightly to the left of the skyline in the image above. Closer to lunchtime, I began to roam through town in search of food. The heart of the city reminded me more of Portland than anything else – art, nature, and bikes everywhere. I found a Japanese supermarket without a single Latin character to be found inside it, and the workers helped me to some bags of loose leaf Japanese Sencha.
+        After fishing, I rented a bike to go explore Stanley Park – a park so big that it’s area is roughly equal in size to the rest of the downtown area combined. You can see it in front and slightly to the left of the skyline in the image above. Closer to lunchtime, I began to roam through town in search of food. The heart of the city reminded me more of Portland than anything else – art, nature, and bikes everywhere. I found a Japanese supermarket without a single Latin character to be found inside it, and the workers helped me to some bags of loose leaf Japanese Sencha.
       </p>
 
       <div class="row">
@@ -654,7 +649,7 @@
       </div>
       <br>
       <p>
-        Over lunch, I realized that my plans to go back to Seattle the next day by two ferries going Vancouver to Victoria, Victoria to Seattle had crumbled because going from Victoria to Seattle was way out of my budget. I made a surprisingly not regrettable decision to go to Victoria and back right then and there. The trip ended up being 5 hours, one way, with only 2 hours of ferry in the middle. On the bright side I met a cute dog and a cute half-Argentinian-half-Texan girl who was studying to be a sustainable architect.
+        Over lunch, I realized that my plans to go back to Seattle the next day by two ferries going Vancouver to Victoria, Victoria to Seattle had crumbled because going from Victoria to Seattle was way out of my budget. I made a surprisingly not regrettable decision to go to Victoria and back right then and there. The trip ended up being 5 hours, one way, with only 2 hours of ferry in the middle. At least I got to meet a cute girl with a cute dog.
       </p>
       <p>
         Unfortunately I only had an hour to run around Victoria before I had to go back, because the final ferry left before sunset. Victoria had a very intriguing combination of outdated European and progressive American vibes. I hope to do more diligence to it when I return.
@@ -667,7 +662,7 @@
       </div>
       <br>
       <p>
-        On the way back to Vancouver, I witnessed what may have been the best sunset of the trip, falling right over the small islands between Vancouver and Victoria. I was lucky enough to have been approached by a couple of kids that seemed my age who were locals from the two cities. They were unforgettably relatable, and held an impressive financial-spiritual balance of existence. I quickly befriended Myles and Brayden over a hard iced tea, and they even offered to take me with them to their friends place in North Vancouver. This meant a much shorter return journey, a much nicer place to stay, and getting even more perspective from kids my age. 
+        On the way back to Vancouver, I witnessed what may have been the best sunset of the trip, falling right over the small islands between Vancouver and Victoria. I was lucky enough to have met Myles and Brayden, two locals my age, who demonstrated fascinating perspective and even offered to let me stay with them at their friends place in North Vancouver. 
       </p>
 
 
@@ -677,9 +672,10 @@
       </div>
       </div>
       <br>
-      <p> We got to their friend Dylan’s house, which had one of the gnarliest views of any city that I’ve seen. They graciously hosted me for the night and gave me a great sense of comfort that I didn’t expect to find so many thousands of miles from home. Also, I must admit that these Canadians’ taste in music is absolutely savage – my Spotify library almost doubled after that night. I urge everyone to listen to Logic’s The Incredible True Story; it samples the most unforgettable excerpt of Alan Watts (at 2:58) I’ve ever heard. </p>
+      <p> We got to their friend Dylan’s house, which had one of the gnarliest views of any city that I’ve seen. They graciously hosted me for the night and gave me a great sense of comfort that I didn’t expect to find so many thousands of miles from home. I am very impressed by the Canadien's taste in music – my Spotify library almost doubled after that night. I urge everyone to listen to <a href="https://www.youtube.com/watch?v=cmkkcAh08vw">Logic’s The Incredible True Story</a> – it samples the most unforgettable excerpt of Alan Watts (at 2:58) I’ve ever heard. </p>
 
-      <p> Brayden also convinced me to watch the Cowspiracy – the most reality shattering piece of investigative journalism I’ve ever seen, available on Netflix. Misconception: fossil fuels are the primary cause of greenhouse gas emissions. Reality: animal agriculture contributes equally, if not more, to global warming than fossil fuels. I am now convinced that I could no long self-proclaim as an environmentalist if I consume beef. How are we going to use cows for locomotive labor, for dairy products, and eat them after that? </p> 
+      <p> Brayden also convinced me to watch <a href="https://www.netflix.com/search/cow?jbv=80033772&jbp=0&jbr=0">Cowspiracy</a> – the most reality shattering piece of investigative journalism I’ve ever seen. It exposes corruption within environmental non-profits by debunking the misconception that fossil fuels are the primary cause of greenhouse gas emissions. In reality animal agriculture contributes equally, if not more, to global warming than fossil fuels, and the majority of that impact can be mitigated by simply not eating beef.
+      </p> 
 
       <div class="row">
       <div class="one column"><br></div>
@@ -690,11 +686,9 @@
       </div>
       <br>
       <p>
-        I was so lucky to stumble into these people who unexpectedly provided quite a spiritually substantial conclusion to my journey. Vancouver’s one hell of a place that I won’t forget – I hope to cross paths soon with these goons.
+        Thank you Vancouver for providing quite a spiritually fullfilling conclusion to my journey. I am undoubledly lucky to have stumbled into all of these life-altering people among my journey, none of which I could have met under more traditional and rigid travel plans. I am forever thankful. I am forever altered.
       </p>
-      <p>
-        The remainder of my journey was a long rest and recovery on the way back home with negligible details. I must report that I saw so many beautiful things, vibrated with utter satisfaction every day since hitting Chicago, and would be honored to live in any of these cities in the post-Penn chapter of my life. I always seek to undergo extreme experiences, to find impossible-to-ignorable truths that permanently alter me. I am no longer the same.
-      </p>
+
 
       <div class="row">
       <div class="twelve columns">
@@ -702,11 +696,8 @@
       </div>
       </div>
       <br>
-      <p>
-        If this intrigued you, definitely ask me about it – this post only scratched the surface of the significance of the truths I uncovered here. I learned that travelling is one of the most educational experiences one can possibly engage in, so I will definitely do my best to keep journeying through the rest of my existence on this pale blue dot. I don’t feel solitude, but I also welcome fellow journeyers to join me. If you have any questions or want to join me on more adventures through unique corners of this universe, definitely reach out. If you’ve never met me that’s cool too – hit me up at michael.raevsky@gmail.com.
-      </p>
-
-      <h5><a class="button" href="index.html">read more on my home page</a></h5>
+     
+      <h5><a class="button" href="index.html">home</a></h5>
 
       </div>
     </div>
