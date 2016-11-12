@@ -10,6 +10,10 @@
  * Remove default margin.
  */
 
+ .pics {
+  width: 120%;
+ }
+
 .topbar {
     background-color: white;
     height: 40px;
@@ -17,6 +21,22 @@
     z-index: 10;
     position: fixed;
 }
+
+.homebtn {
+    width: 100%;
+    background-color: white;
+    color: #555;
+    padding-top: 14px;
+    padding-bottom: 34px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
 
 /* Dropdown Button */
 .dropbtn {
