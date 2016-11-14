@@ -43,6 +43,17 @@
   <link rel="stylesheet" href="leaflet/leaflet.css">
   <script src="leaflet/leaflet.js"></script>
 
+   <!-- image resize
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+  if($(this).width() > $(this).height()) { 
+   $(this).css('width',MaxPreviewDimension+'px');
+   $(this).css('height','auto');
+  } else {
+   $(this).css('height',MaxPreviewDimension+'px');
+   $(this).css('width','auto');
+  }
+  </script>
 
 </head>
 <body>
