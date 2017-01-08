@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>M.R.</title>
+  <title>Mr Tripsky</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -26,6 +26,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/MRicon.png">
 
+  <!-- fontawesome.io plugin
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/5c16066bc7.js"></script>
+
   <!-- JQuery LazyLoad
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="jquery.js"></script>
@@ -37,39 +41,75 @@
     });
   });
   </script>
-
 </head>
 <body>
+
+<style> /* For making popups */
+          /* Tooltip container */
+          .tooltip {
+              position: relative;
+          }
+
+          /* Tooltip text */
+          .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 100%;
+              top: -2px;
+              bottom: 8px;
+              left: -2px;
+              font-size: 12px;
+              background-color: #e6ffff;
+              color: black;
+              text-align: center;
+              padding: 30px 2px;
+              border-radius: 6px;
+              border: 1px solid #bbb;
+              /* Position the tooltip text - see examples below! */
+              position: absolute;
+              z-index: 1;
+
+          }
+
+          /* Show the tooltip text when you mouse over the tooltip container */
+          .tooltip:hover .tooltiptext {
+              visibility: visible;
+          }
+</style>
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="container">
-    <div class="row">
-      <div class="four columns"><br></div>
-      <div class="four columns"style="margin-top:2%"><img src="images/MRicon.png" style="width:23%" text-align="center"><img src="images/mrname.png" style="width:77%" text-align="center"></div>
-      <div class="four columns"><br></div>
+    <div class="namespace">
+      <br><br><h3>Mr. Tripsky</h3>
     </div>
 
-    <div class="row">
-      <div class="two columns"><br></div>
-      <div class="eight columns" style="margin-top:3%">
-        <h6>adventures of a statistics and sustainability fanatic</h6>
 
-
-          <h6><u>travel logs</u></h6>
-          <div class="row">
-            <div class="two columns"><br></div>
-            <div class="four columns">
-                        <a href="trainTrip.html"><button onclick="myFunction()" class="homebtn">Aug 2016: <br> Cross-US Train Trip</button></a><br><br>
-            </div>
-            <div class="four columns">
-                        <a href="iceland.html"><button onclick="myFunction()" class="homebtn">Sept 2016:<br> Iceland, utopian island</button></a><br><br>
-            </div>
-            <div class="two columns"><br></div>
+<div class="About" id="About"><br>
+        <div class="namespace">
+                    “Not all those who wander are lost.” – J.R.R. Tolkien<br><br>
           </div>
+          <br>
+        <div>
+          <div class="row">
+            <div class="four columns">
+                        <a href="trainTrip.html"><button onclick="myFunction()" class="homebtn">Coast-to-Coast Train Trip</button></a>
+            </div>
+            <div class="four columns">
+                        <a href="iceland.html"><button onclick="myFunction()" class="homebtn">Photography of Iceland</button></a>
+            </div>
+            <div class="four columns"><a href="europe.html"><button onclick="myFunction()" class="homebtn">A semester in Europe</button></a></div>
+          </div>
+        </div>
+          <br>
 
-    
+        </div>
+      </div>
+      <br>
+          
+          <br>
+      
 
       <div class="two columns"><br></div>
 
@@ -77,7 +117,7 @@
     </div>
 
   </div>
-
+</div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -10,6 +10,10 @@
  * Remove default margin.
  */
 
+.namespace {
+  text-align: center;
+  font-size: 13px;
+}
 
  .pics {
   width: 120%;
@@ -27,8 +31,8 @@
     width: 100%;
     background-color: white;
     color: #555;
-    padding-top: 14px;
-    padding-bottom: 34px;
+    padding-top: 100px;
+    padding-bottom: 120px;
     padding-left: 14px;
     padding-right: 14px;
     font-size: 10px;
@@ -38,10 +42,14 @@
     border: 1px solid #bbb;
 }
 
+.homebtn:hover, .homebtn:focus {
+    background-color: #e6ffff;
+}
 
 /* Dropdown Button */
 .dropbtn {
-  width: 44px;
+  width: 48px;
+  height: 43px;
   margin-right: 80%;
     background-color: white;
     color: #555;
@@ -59,11 +67,12 @@
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #99ffdd;
+    background-color: #e6ffff;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+
     position: fixed;
     display: inline-block;
 }

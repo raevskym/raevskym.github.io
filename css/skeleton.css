@@ -170,15 +170,15 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #555;
   text-align: center;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 600;
   line-height: 12px;
   letter-spacing: .1rem;
   text-transform: uppercase;
