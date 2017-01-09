@@ -61,13 +61,70 @@
 
 </head>
 <body>
-<div class="container">
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#Berlin">Berlin</a>
+    <a href="#Munich">Munich</a>
+    <a href="#Salzberg">Salzberg</a>
+    <a href="#Vienna">Vienna</a>
+    <a href="#Switz">Switzerland</a>
+    <a href="index.html">Home</a>
 
-<div class="mo">
-      <img class="lazy" data-original="images/iceland10.jpg">
-    </div>
-    <br>
-    <div class="mo">
-      <img class="lazy" data-original="images/iceland22.jpg">
-    </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </div>
+</div>
+</div>
+
+<div class="container">
+<br>
+        <br><h2>East Europe</h2>
+        <div class="Budapest" id="Budapest"><br><br><h5>Budapest</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/budapest1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/budapest2.jpg">
+    </div>
+     <div class="mo">
+      <img class="lazy" data-original="images/europe/central/budapest3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/budapest4.jpg">
+    </div>
+
+<br>
+        <div class="Krakow" id="Krakow"><br><br><h5>Krakow</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/krakow1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/krakow2.jpg">
+    </div>

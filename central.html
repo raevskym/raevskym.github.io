@@ -61,13 +61,137 @@
 
 </head>
 <body>
-<div class="container">
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#Berlin">Berlin</a>
+    <a href="#Munich">Munich</a>
+    <a href="#Salzberg">Salzberg</a>
+    <a href="#Vienna">Vienna</a>
+    <a href="#Switz">Switzerland</a>
+    <a href="index.html">Home</a>
 
-<div class="mo">
-      <img class="lazy" data-original="images/iceland10.jpg">
-    </div>
-    <br>
-    <div class="mo">
-      <img class="lazy" data-original="images/iceland22.jpg">
-    </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </div>
+</div>
+</div>
+
+<div class="container">
+<br>
+        <br><h2>Central Europe</h2>
+        <div class="Berlin" id="Berlin"><br><br><h5>Berlin</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/berlin1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/berlin2.jpg">
+    </div>
+     <div class="mo">
+      <img class="lazy" data-original="images/europe/central/berlin3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/berlin5.jpg">
+    </div>
+     <div class="mo">
+      <img class="lazy" data-original="images/europe/central/berlin4.jpg">
+    </div>
+
+
+<br>
+        <div class="Munich" id="Munich"><br><br><h5>Munich</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/munich1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/munich2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/dachau1.jpg">
+    </div>
+
+<br>
+        <div class="Salzberg" id="Salzberg"><br><br><h5>Salzberg</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/salzburg1.jpg">
+    </div>
+
+<br>
+        <div class="Vienna" id="Vienna"><br><br><h5>Vienna</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/vienna1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/vienna2.jpg">
+    </div>
+
+<br>
+        <div class="Switz" id="Switz"><br><br><h5>Switzerland</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz4.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz5.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz6.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz7.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz8.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz9.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz10.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz11.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/central/switz12.jpg">
+    </div>

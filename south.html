@@ -61,13 +61,164 @@
 
 </head>
 <body>
-<div class="container">
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#Barcelona">Barcelona</a>
+    <a href="#Madrid">Madrid</a>
+    <a href="#Lisbon">Lisbon</a>
+    <a href="#Rome">Rome</a>
+    <a href="#Naples">Pompeii & Iscia</a>
+    <a href="#Tuscany">Tuscany</a>
+    <a href="index.html">Home</a>
 
-<div class="mo">
-      <img class="lazy" data-original="images/iceland10.jpg">
-    </div>
-    <br>
-    <div class="mo">
-      <img class="lazy" data-original="images/iceland22.jpg">
-    </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </div>
+</div>
+</div>
+
+<div class="container">
+<br>
+        <br><h2>South Europe</h2>
+        <div class="Barcelona" id="Barcelona"><br><h5>Barcelona</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/barca1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/barca2.jpg">
+    </div>
+     <div class="mo">
+      <img class="lazy" data-original="images/europe/south/barca3.jpg">
+    </div>
+
+<br>
+        <div class="Madrid" id="Madrid"><br><br><h5>Madrid</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/madrid1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/madrid2.jpg">
+    </div>
+
+
+<br>
+        <div class="Lisbon" id="Lisbon"><br><br><h5>Lisbon</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Lisbon2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Lisbon4.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Lisbon3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Lisbon1.jpg">
+    </div>
+
+<br>
+        <div class="Rome" id="Rome"><br><br><h5>Rome</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome4.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome5.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome6.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome7.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/Rome1.jpg">
+    </div>
+
+<br>
+        <div class="Naples" id="Naples"><br><br><h5>Pompeii & Iscia</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples4.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples6.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/naples7.jpg">
+    </div>
+
+
+<br>
+        <div class="Tuscany" id="Tuscany"><br><br><h5>Tuscany</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy2.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy4.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy1.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy6.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/south/italy5.jpg">
+    </div>
+
+
+  
+  <br>
+<h5><a class="button" href="index.html">home</a></h5>
