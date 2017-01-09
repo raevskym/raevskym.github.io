@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Mr Tripsky</title>
+  <meta name="description" content="Cross Country Train Trip">
+  <meta name="author" content="Michael Raevsky">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- fontawesome.io plugin
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/5c16066bc7.js"></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/MRicon.png">
+
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
+
+  <!-- LeafLet Maps API
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="leaflet/leaflet.css">
+  <script src="leaflet/leaflet.js"></script>
+
+   <!-- image resize
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+  if($(this).width() > $(this).height()) { 
+   $(this).css('width',MaxPreviewDimension+'px');
+   $(this).css('height','auto');
+  } else {
+   $(this).css('height',MaxPreviewDimension+'px');
+   $(this).css('width','auto');
+  }
+  </script>
+
+</head>
+<body>
+
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#nIreland">North Ireland</a>
+    <a href="#Ireland">Ireland</a>
+    <a href="#Oxford">Oxford</a>
+    <a href="#London">London</a>
+    <a href="#Scotland">Scotland</a>
+    <a href="index.html">Home</a>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</div>
+</div>
+</div>
+
+<div class="container">
+<br>
+        <br><h2>West Europe</h2>
+        <div class="nIreland" id="nIreland"><br><h5>Belgium</h5></div>
+</div>
+
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/brit/north3.jpg">
+    </div>
+    <div class="mo">
+      <img class="lazy" data-original="images/europe/brit/north1.jpg">
+    </div>

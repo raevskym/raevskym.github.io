@@ -42,21 +42,82 @@
   });
   </script>
 
+
+
 <body>
+
+<div class="topbar">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="brit.html">British Isles</a>
+    <a href="scandinavia.html">Scandinavia</a>
+    <a href="west.html">West Europe</a>
+    <a href="central.html">Central Europe</a>
+    <a href="east.html">East Europe</a>
+    <a href="south.html">South Europe</a>
+    <a href="index.html">Home</a>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</div>
+  </div>
+</div>
   <div class="container">
     <div class="row">
-      <div class="twelve column">
+      <div class="twelve column"><br>
         <br><h2>100 Days of Europe</h2>
 <div class="pt1" id="pt1"></div>
-    <h6>20+ countries, 50+ cities, and infinite gratitude for novel friendships and perspectives.<br>
-      Photography, hidden gems, culture shock fun facts, and pointers for a savagely frugal Eurotrip.<br><br>Coming Soon</h6>
-</div>
+    <h6>20+ countries, 40+ cities, and infinite gratitude for novel friendships and perspectives.<br>
+      iPhone photography, hidden gems, culture shock fun facts, and pointers for a savagely frugal Eurotrip.<br><br></h6>
 </div>
 </div>
 
-<div class="mo">
-      <img class="lazy" data-original="images/iceland36.jpg">
+
+<div class="row">
+            <div class="four columns">
+                        <a href="brit.html"><button onclick="myFunction()" class="eurobtn">British Isles:<br><br>Ireland<br>UK (London & Cambridge)<br>Scotland</button></a>
+            </div>
+            <div class="four columns">
+                        <a href="scandinavia.html"><button onclick="myFunction()" class="eurobtn">Scandinavia:<br><br>Denmark (Copenhagen)<br>Sweden (Stockholm & Goteborg)<br> Norway (Oslo)</button></a>
+            </div>
+            <div class="four columns"><a href="west.html"><button onclick="myFunction()" class="eurobtn">West Europe:<br><br>The Netherlands<br> Belgium<br> France (Paris)</button></a></div>
 </div>
+<div class="row">
+            <div class="four columns">
+                        <a href="central.html"><button onclick="myFunction()" class="eurobtn">Central Europe:<br><br>Germany (Berlin & Munich)<br>Austria (Vienna & Salzberg)<br>Switzerland</button></a>
+            </div>
+            <div class="four columns">
+                        <a href="east.html"><button onclick="myFunction()" class="eurobtn">East Europe:<br><br>Poland (Warsaw & Krakow)<br> Czech Republic (Prague)<br> Hungary (Budapest)<br>Croatia (Zagreb & Zadar)</button></a>
+            </div>
+            <div class="four columns">
+                        <a href="south.html"><button onclick="myFunction()" class="eurobtn">South Europe:<br><br> Spain (Barcelona & Madrid)<br> Portugal (Lisbon) <br>Italy </button></a>
+            </div>
+    </div>
+
+</div>
+
+<h5><a class="button" href="index.html">home</a></h5>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
