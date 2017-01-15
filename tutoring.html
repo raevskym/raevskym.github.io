@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Michael Raevsky</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/MRicon.png">
+
+  <!-- fontawesome.io plugin
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/5c16066bc7.js"></script>
+
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
+</head>
+<body>
+
+<style> /* For making popups */
+          /* Tooltip container */
+          .tooltip {
+              position: relative;
+          }
+
+          /* Tooltip text */
+          .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 100%;
+              top: -2px;
+              bottom: 8px;
+              left: -2px;
+              font-size: 12px;
+              background-color: #e6ffff;
+              color: black;
+              text-align: center;
+              padding: 30px 2px;
+              border-radius: 6px;
+              border: 1px solid #bbb;
+              /* Position the tooltip text - see examples below! */
+              position: absolute;
+              z-index: 1;
+
+          }
+
+          /* Show the tooltip text when you mouse over the tooltip container */
+          .tooltip:hover .tooltiptext {
+              visibility: visible;
+          }
+</style>
+
+<div class="container">
+    <div class="namespace">
+      <br><br><h3>Tutoring</h3>
+      <h6>& College Admissions Consulting</h6>
+
+
+          <div class="row">
+                <div class="four columns">
+                   <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">Data Science and statistical<br>marketing/management consulting</button>
+                     <span class="tooltiptext">Having identified profitable trades at a quantitative hedge fund and served as a teaching assistant to the Wharton MBA statistical computing course – Michael has a 5+ year history of crafting superb models and identifying actionable insights from huge and seemingly unenlightening datasets. Check out some of his work above.</span>
+                   </div>
+                </div>
+                <div class="four columns">
+                  <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">tutoring and standardized test prep<br>for high school students</button>
+                      <span class="tooltiptext">Entering his 7th year of tutoring and his 2nd year coaching Philadelphia Science Leadership Academy's math team, Michael is eager to teach. After landing perfect ACT / SAT II math and science scores, Michael has been tutoring high school and college students in both standardized testing and coursework in Math, Physics, and Computer Science.</span>
+                   </div>
+                </div>
+                <div class="four columns">
+                  <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">College Admissions <br> Consulting</button>
+                      <span class="tooltiptext">After getting admitted to 14 top universities, including most of the Ivy League, Michael has coached college applicants each subsequent year. His services include consulting on application choices, suggesting edits on applications, and informing applicants of unexpected nuts and bolts of the process.</span>
+                   </div>
+                </div>
+          </div>

@@ -1,3 +1,6 @@
+  <!-- RESOLVE: NAVBAR BUG
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Mr Tripsky</title>
+  <title>Michael Raevsky</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -61,7 +64,7 @@
               background-color: #e6ffff;
               color: black;
               text-align: center;
-              padding: 30px 2px;
+              padding: 13px 2px;
               border-radius: 6px;
               border: 1px solid #bbb;
               /* Position the tooltip text - see examples below! */
@@ -77,54 +80,191 @@
 </style>
 
 
+
+<div class="topbar"> <!-- 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
+  <div id="myDropdown" class="dropdown-content" style="margin-top: 40px">
+    <a href="#Projects">Projects</a>
+    <a href="#Work">Work</a>
+    <a href="#About">About</a>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</div>
+  </div> -->
+  <div class="toptext">
+        <u>Michael Raevsky</u>
+  </div>
+</div>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="container">
     <div class="namespace">
-      <br><br><h2>Mr. Tripsky</h2>
-    </div>
-
-
-<div class="About" id="About"><br>
-        <div class="namespace">
-                    “Not all those who wander are lost.” – J.R.R. Tolkien<br><br>
+        <br><br>Math & Econ student at UPenn-Wharton '18
+          <br>Interested in Technology & Social/Environmental Impact<br><br>
+          <div class ="icons">
+            <a href="ResumeMichaelRaevsky.pdf"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.linkedin.com/in/michaelraevsky"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.quora.com/profile/Michael-Raevsky"><i class="fa fa-quora fa-2x" aria-hidden="true"></i></div></a><br><br>
           </div>
-          <br>
-        <div>
+     
+
+  <div class="Projects" id="Projects">
+
+          <h6><u>PROJECTS</u></h6> <!-- Tesla, Apple, Nuclear, Radiohead  -->
+<!--<div class="namespace"><i>"If something is important enough, even if the odds are against you, you should still do it." – Elon Musk</i><br><br> </div>-->
+          <div class="row"> 
+                <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">Impact of Apple Ad Expenditures <br> (& other covariates) on iMac sales</button>
+                       <span class="tooltiptext">What is the impact of Apple's advertising expenditures on iMac sales?<br> What about new models? Or Steve Jobs's death?<br><br> 
+                         <a href="https://raevsky.shinyapps.io/applesales"><i class="fa fa-external-link fa-2x"></i></a>
+                         &nbsp&nbsp&nbsp&nbsp&nbsp
+                         <a href="AppleSalesMR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                         &nbsp&nbsp&nbsp&nbsp&nbsp
+                         <a href="server.R"><i class="fa fa-code fa-2x"></i></a>
+                         <br> <br>Nov '16<br>Built using R</span>
+                    </div>
+                    
+                </div>
+                 <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
+                         <a href="https://raevsky.shinyapps.io/applesales"><button onclick="myFunction()" class="homebtn">Tesla Model S Sales vs Oil <br> prices: a by-customer analysis</button></a>
+                       <span class="tooltiptext">Do rising oil prices propel electric car purchases?<br>Does the release of new Tesla products impact Model S sales?<br><br> 
+                         <a href="TeslaModel.xlsx"><i class="fa fa-file-excel-o fa-2x"></i></a>
+                        <br><br>Sept '16<br>Built using Excel</span>
+                    </div>
+                    
+              </div>
+              <div class="four columns"> <!-- Statistics, Marketing, Finance  -->
+                   <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">A statistical enquiry into the benefits<br>and dangers of nuclear energy</button><br>
+                  <span class="tooltiptext">An often-cited argument against nuclear energy is the history of powerplant catastrophes – but is Chernobyl actually an exception to the rule?<br><br> 
+
+                    <a href="NuclearPowerMR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href="NuclearAccidents.xlsx"><i class="fa fa-file-excel-o fa-2x"></i></a>
+                         
+                    <br><br>April '16<br>Built using Excel</span>
+                </div>
+                </div>
+              
           <div class="row">
-            <div class="four columns">
-                        <a href="trainTrip.html"><button onclick="myFunction()" class="homebtn">Coast-to-Coast Train Trip</button></a>
-            </div>
-            <div class="four columns">
-                        <a href="iceland.html"><button onclick="myFunction()" class="homebtn">Photography of Iceland</button></a>
-            </div>
-            <div class="four columns"><a href="europe.html"><button onclick="myFunction()" class="homebtn">100 Days in Europe</button></a></div>
+                <div class="two columns">&nbsp</div>
+                
+                <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
+                         <button onclick="myFunction()" class="homebtn">Effect of airplay, media rankings, and<br>seasonality on Radiohead album sales</button>
+                       <span class="tooltiptext">How does radio airplay influence album sales?<br>What about reaching (and leaving) the Billboard top 200 list?<br><br>
+                      
+                        <a href="RadioheadMR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                         &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="Radiohead.xlsx"><i class="fa fa-file-excel-o fa-2x"></i></a>
+                        
+                    <br> <br>Feb '16<br>Built using Excel</span>
+                    </div>
+                    
+              </div>
+                <div class="four columns">  <!-- Statistics, Finance  -->
+                   <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">An academic number theory revelation<br>in a Hyperbolic Geometry configuration</button><br>
+                  <span class="tooltiptext">Michael's first and only taste of the ivory tower –<br>statistics on a graduate level research problem, impossible to summarize in 3 lines.<br><br><a href="SSP_MR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a><br><br>Dec '13<br>Built using R & Python</span>
+                </div>
+                </div>
+                <div class="two columns">&nbsp</div>
           </div>
-        </div>
-          <br>
-          <div class="namespace">
-            This work aims to encourage and enable travel because doing so propels societal perspective, knowledge, happiness, and compassion. <br><br><br>
-            <i> But dude, why are you wasting your time developing this site when you could just upload to Facebook/Twitter/Insta? </i><br><br>
-            Photographic storytelling is an art. I believe a blank canvas is a nessecary starting point to remove social media's psychological overshadowings and imerse the viewer in my journey. I aim to share the continuous legacy my trips leave on my psyche, rather than discrete moments in time.
+</div>
+<div class="Work" id="Work"><br><br>
 
-        </div>
-      </div>
-      <br>
-          
-          <br>
-      
+          <h6><u>WORK</u></h6> <!-- Ind, ind, aca, aca -->
+  <!--    <div class="namespace"><i>"Deprived of meaningful work, men and women lose their reason for existence; they go stark, raving mad." – Fyodor Dostoyevsky</i><br><br></div> -->
+                    
+          <div class="row">
+                 <div class="four columns">  <!-- Green Tech, Entrepreneurship  -->
+                  <div class="tooltip">
+                         <button onclick="myFunction()" class="homebtn">root: save time, money,<br>  and the planet</button>
+                      <span class="tooltiptext">An energy saving engineering project <br> turned into a 7 person NSF-backed startup,  <br> founded and managed by Michael <br><br> 
+                        <a href="http://www.roottech.io"><i class="fa fa-external-link fa-2x"></i></a><br><br>Dec '15 - Aug '16<br>Founder and CEO</span>
+                   </div>
+                   </div>  
+                 <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
+                         <button onclick="myFunction()" class="homebtn">building probability models of<br> customer lifetime value</button>
+                       <span class="tooltiptext">Research on customer-centric corporate valuation, led by Peter Fader and Dan McCarthy of the Wharton Statistics Department.<br><br><a href="researchreport.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a><br><br>May '15 – Aug '15<br>University Scholar (Research Assistant)</span>
+                    </div>
+                  </div>
+                  <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
+                        <button onclick="myFunction()" class="homebtn">identify profitable options trades<br>by mining bloomberg data</button>
+                       <span class="tooltiptext">Using SQL database querries to extract insights into stock volatility at New York-based hedge fund Amilar Capital<br><br> 
+                        (Detailed Disclosure Prohibited)</a><br><br>June '14 – Aug '14<br>Quantitative Trading Intern</span>
+                    </div>
+            </div>
+</div>
 
-      <div class="two columns"><br></div>
+<div class="About" id="About">
+          <br><br>
+        <div class="namespace">
+          <h6><u>ABOUT</u></h6>
+          I am always creating and looking for opportunities to build impactful technology businesses. <br><br>
+          <div class="row">
+            <div class="four columns"><br></div>
+            <div class="four columns">
+            <img class="lazy" data-original="images/me2.png">
+            </div>
+            <div class="four columns"><br></div>
+          </div>
+         <!-- <br>
+          I'm a dual degree student at the University of Pennsylvania, Class of 2018, studying Statistics in the Wharton School and Mathematics in the School of Arts and Sciences. You can learn about my coursework <a>here</a> and my private tutoring services <a href = "tutoring.html">here</a>. 
+          <br>-->
+<br>
+          If taking a break from data modeling projects, developing startup ideas, and studying – I'm likely reading, exploring nature, traveling, or discovering art/music.
+          <br><br>
+         
+          <div class ="icons">
+            <a href="ResumeMichaelRaevsky.pdf"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.linkedin.com/in/michaelraevsky"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.quora.com/profile/Michael-Raevsky"><i class="fa fa-quora fa-2x" aria-hidden="true"></i></div></a><br>
+<div class="last">
+            <i>"Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart." – Steve Jobs</i><br>
+            <br>
 
+
+            
+          </div>
+           </div>
+       
+</div>
 
     </div>
 
   </div>
-
-  <h6>Want to get updates?</h6>
-
-</div>
 </div>
 
 <!-- End Document

@@ -367,7 +367,8 @@ u-max-full-width is changed to lazy for the lazyload js plugin
   width: 100%;
   box-sizing: border-box; }
 .lazy {
-  width: 96%;
+  width: 98%;
+  padding-left: 2%;
   box-sizing: border-box; }
 .u-pull-right {
   float: right; }
