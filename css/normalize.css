@@ -16,7 +16,7 @@
 
 .namespace {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
  .pics {
@@ -44,7 +44,7 @@
 .homebtn {
     width: 100%;
     background-color: white;
-    color: #555;
+    color: #47B8DE;
     padding-top: 80px;
     padding-bottom: 100px;
     padding-left: 14px;
@@ -53,7 +53,7 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    border: 1px solid #bbb;
+    border: 1px solid #47B8DE;
 }
 
 .homebtn:hover, .homebtn:focus {
