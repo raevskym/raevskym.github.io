@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Michael Raevsky</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/MRicon.png">
+
+  <!-- fontawesome.io plugin
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/5c16066bc7.js"></script>
+
+  <!-- JQuery LazyLoad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="jquery.js"></script>
+  <script src="jquery-lazyload/jquery.lazyload.js"></script>
+  <script>
+  $(function() {
+    $("img.lazy").lazyload({
+      effect : "fadeIn"
+    });
+  });
+  </script>
+</head>
+<body>
+
+<style> /* For making popups */
+          /* Tooltip container */
+          .tooltip {
+              position: relative;
+          }
+
+          /* Tooltip text */
+          .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 100%;
+              top: -2px; 
+              bottom: 8px;
+              left: -2px;
+              font-size: 12px;
+              background-color: #e6ffff;
+              color: black;
+              text-align: center;
+              padding: 30px 2px;
+              border-radius: 6px;
+              border: 1px solid #bbb;
+              /* Position the tooltip text - see examples below! */
+              position: absolute;
+              z-index: 1;
+
+          }
+
+          /* Show the tooltip text when you mouse over the tooltip container */
+          .tooltip:hover .tooltiptext {
+              visibility: visible;
+          }
+</style>
+
+<div class="container">
+    <div class="namespace">
+      <h3>Identifying spam in texts using Bayesian Classification </h3>
+      The below visualizations demonstrate the most frequently occuring words in the whole dataset, spam subset, and non-spam subset. <br><br>
+        <div class="row">
+          <div class="four columns">Both
+            <img class="lazy" data-original="images/both.png">
+          </div>
+          <div class="four columns">Spam
+            <img class="lazy" data-original="images/spam.png">
+          </div>
+          <div class="four columns">Non-Spam
+            <img class="lazy" data-original="images/ham.png">
+          </div>
+        </div>
+        <br><br>
+        You can see the visualizations interactively using an R shiny app. Unfortunately the shinyapps.io host (which allowed me to upload the <a href="https://raevsky.shinyapps.io/applesales">Apple</a> and <a href="https://raevsky.shinyapps.io/teslasales">Tesla</a> projects) doesn't support one of the NLP libraries, tm, for this app, so you can <a href="Archive.zip">download</a> the app and run it locally.
+     </div>
+</div>
