@@ -6,6 +6,61 @@
  *    user zoom.
  */
 
+.front, .back{
+  width: 100px;
+  height: 100px;
+}
+.front{
+  background-color: blue;
+}
+.back{
+  background-color: red;
+      background-image: url("https://yt3.ggpht.com/-Bvvd30cZJe4/AAAAAAAAAAI/AAAAAAAAAAA/CxN5F1_QEU8/s100-c-k-no/photo.jpg");
+  background-size: cover;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 100px;
+  height: 100px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
 /**
  * Remove default margin.
  */
@@ -24,7 +79,6 @@
  }
 
 .topbar {
-    background-color: white;
     height: 42px;
     width: 100%;
     z-index: 10;
@@ -43,8 +97,7 @@
 
 .homebtn {
     width: 100%;
-    background-color: white;
-    color: #47B8DE;
+    color: black;
     padding-top: 80px;
     padding-bottom: 100px;
     padding-left: 14px;
@@ -53,7 +106,7 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    border: 1px solid #47B8DE;
+    border: 1px solid gray;
 }
 
 .homebtn:hover, .homebtn:focus {

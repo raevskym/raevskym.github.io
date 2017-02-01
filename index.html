@@ -56,10 +56,10 @@
           /* Tooltip text */
           .tooltip .tooltiptext {
               visibility: hidden;
-              width: 100%;
-              top: -2px;
-              bottom: 8px;
-              left: -2px;
+              width: 109%;
+              top: -15px;
+              bottom: -5px;
+              left: -15px;
               font-size: 12px;
               background-color: #e6ffff;
               color: black;
@@ -77,9 +77,19 @@
           .tooltip:hover .tooltiptext {
               visibility: visible;
           }
+
+          .fa-file-text-o:hover {
+              height: 18%;
+              width: 18%;
+          }
+
+          .fa {
+            color: black;
+          }
+
 </style>
 
-
+<img src='iceland.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 
 <div class="topbar"> <!-- 
 <div class="dropdown">
@@ -122,9 +132,9 @@
 
   <div class="container">
     <div class="namespace">
-        <br><br>Math & Econ student at UPenn-Wharton '18
-          <br>Interested in Technology & Social/Environmental Impact<br><br>
-          <div class ="icons">
+        <br><br>Math & Econ at UPenn-Wharton '18
+          <br>Interested in Technology & Social/Environmental Impact<br><br><br>
+          <div class ="iconbtn">
             <a href="ResumeMichaelRaevsky.pdf"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
             &nbsp&nbsp&nbsp&nbsp&nbsp
             <a href="mailto:raevskym@wharton.upenn.edu"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
@@ -135,9 +145,9 @@
           </div>
      
 
-  <div class="Projects" id="Projects">
+  <div class="statmktg" id="statmktg"><br>
 
-          <h6><u>PROJECTS</u></h6> <!-- Tesla, Apple, Nuclear, Radiohead  -->
+          <h6><u>Statistical Marketing Projects</u></h6> <!-- Tesla, Apple, Nuclear, Radiohead  -->
 <!--<div class="namespace"><i>"If something is important enough, even if the odds are against you, you should still do it." – Elon Musk</i><br><br> </div>-->
           <div class="row"> 
                 <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
@@ -167,6 +177,24 @@
                 </div>
               <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
                     <div class="tooltip">
+                         <button onclick="myFunction()" class="homebtn">By-customer analysis<br>of Radiohead album sales</button>
+                       <span class="tooltiptext">How does radio airplay influence album sales?<br>What about reaching (and leaving) the Billboard top 200 list?<br><br>
+                      
+                        <a href="RadioheadMR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                         &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="Radiohead.xlsx"><i class="fa fa-file-excel-o fa-2x"></i></a>
+                        
+                      <br> <br>Feb '16<br>Built using Excel</span>
+                      </div>
+              </div>
+              </div>
+</div><br>
+<div class="datascience" id="datascience">
+
+          <h6><u>Data Science Projects</u></h6>
+              <div class="row">
+              <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
+                    <div class="tooltip">
                          <button onclick="myFunction()" class="homebtn">Bayesian Classification<br>to identify Spam</button>
                        <span class="tooltiptext">How can we use NLP on a dataset of both spam and legitimate text messages in order to identify the words most commonly associated with spam?<br><br> 
                          <a href="spam.html"><i class="fa fa-external-link fa-2x"></i></a>
@@ -175,9 +203,6 @@
                         <br><br>Sept '16<br>Built using R</span>
                     </div>
                 </div>
-              </div>
-
-              <div class="row">
               <div class="four columns"> <!-- Statistics, Marketing, Finance  -->
                    <div class="tooltip">
                         <button onclick="myFunction()" class="homebtn">Pros and cons<br>of nuclear energy</button><br>
@@ -190,18 +215,6 @@
                     <br><br>April '16<br>Built using Excel</span>
                 </div>
               </div>
-                <div class="four columns">  <!-- Green Tech, Statistics, Finance  -->
-                    <div class="tooltip">
-                         <button onclick="myFunction()" class="homebtn">By-customer analysis<br>of Radiohead album sales</button>
-                       <span class="tooltiptext">How does radio airplay influence album sales?<br>What about reaching (and leaving) the Billboard top 200 list?<br><br>
-                      
-                        <a href="RadioheadMR.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a>
-                         &nbsp&nbsp&nbsp&nbsp&nbsp
-                        <a href="Radiohead.xlsx"><i class="fa fa-file-excel-o fa-2x"></i></a>
-                        
-                      <br> <br>Feb '16<br>Built using Excel</span>
-                      </div>
-              </div>
                 <div class="four columns">  <!-- Statistics, Finance  -->
                    <div class="tooltip">
                         <button onclick="myFunction()" class="homebtn">Number Theory and <br>Hyperbolic Geometry</button><br>
@@ -209,9 +222,9 @@
                 </div>
                 </div>
 </div>
-<div class="Work" id="Work"><br><br>
+<div class="Work" id="Work"><br>
 
-          <h6><u>WORK</u></h6> <!-- Ind, ind, aca, aca -->
+          <h6><u>Work Experience</u></h6> <!-- Ind, ind, aca, aca -->
   <!--    <div class="namespace"><i>"Deprived of meaningful work, men and women lose their reason for existence; they go stark, raving mad." – Fyodor Dostoyevsky</i><br><br></div> -->
                     
           <div class="row">
@@ -238,9 +251,9 @@
 </div>
 
 <div class="About" id="About">
-          <br><br>
+          <br>
         <div class="namespace">
-          <h6><u>ABOUT</u></h6>
+          <h6><u>About</u></h6>
           I am always creating and looking for opportunities to build impactful technology businesses. <br><br>
           <div class="row">
             <div class="four columns"><br></div>
@@ -253,7 +266,7 @@
           I'm a dual degree student at the University of Pennsylvania, Class of 2018, studying Statistics in the Wharton School and Mathematics in the School of Arts and Sciences. You can learn about my coursework <a>here</a> and my private tutoring services <a href = "tutoring.html">here</a>. 
           <br>-->
 <br>
-          If taking a break from data modeling projects, developing startup ideas, and studying – I'm likely reading, exploring nature, traveling, or discovering art/music.
+          If taking a break from data modeling projects, developing startup ideas, and coursework – I'm likely reading, exploring nature, traveling, or discovering art/music.
           <br><br>
          
           <div class ="icons">
